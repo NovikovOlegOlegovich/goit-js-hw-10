@@ -5,7 +5,7 @@ import countrisMurkupLess10 from './templstes/countriesNum2-10.hbs';
 import countrisMurkupFor1 from './templstes/onecountry.hbs';
 import Notiflix from 'notiflix';
 
-refs = {
+const refs = {
   inputEl: document.getElementById('search-box'),
   countryListEl: document.querySelector('.country-list'),
 };
