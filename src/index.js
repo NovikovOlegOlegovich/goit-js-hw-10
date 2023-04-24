@@ -26,6 +26,8 @@ function onSerch(event) {
     .fetchCountries()
     .then(country => {
       if (country.length === 1) {
+        country[0].languages = Object.values(country[0].languages).join(', ');
+
         appendCountrisMurkup(country, countrisMurkupFor1);
       } else if (country.length < 11) {
         appendCountrisMurkup(country, countrisMurkupLess10);
