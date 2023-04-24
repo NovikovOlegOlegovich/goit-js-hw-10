@@ -18,3 +18,19 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+.country-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.country-img {
+  margin-right: 10px;
+}
+
+.cantry-inf-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

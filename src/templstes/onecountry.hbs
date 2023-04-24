@@ -1,0 +1,14 @@
+{{#each this}}
+  <ul class='cantry-inf'>
+    <li class='cantry-inf-item'><img
+        class='country-img'
+        src='{{flags.svg}}'
+        alt=''
+        width='50px'
+        height='30px'
+      /><p>{{name.official}}</p></li>
+    <li class='cantry-inf-item'><p>Capital: {{capital}}</p></li>
+    <li class='cantry-inf-item'><p>Population: {{population}}</p></li>
+    <li class='cantry-inf-item'><p>Languages: {{Object.values(languages)}}</p></li>
+  </ul>
+{{/each}}
