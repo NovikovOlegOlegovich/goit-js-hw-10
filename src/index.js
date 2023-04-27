@@ -38,9 +38,11 @@ function onSerch(event) {
         );
       }
     })
-    .catch(errors => {
+    .catch(error => {
       refs.countryListEl.innerHTML = '';
-      Notiflix.Notify.failure('Oops, there is no country with that name');
+      error.message === '404'
+        ? Notiflix.Notify.failure('Oops, there is no country with that name')
+        : Notiflix.Notify.failure(`${error.message}`);
     });
 }
 
