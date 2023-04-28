@@ -31,7 +31,7 @@ function onSerch(event) {
         appendCountrisMurkup(country, countrisMurkupFor1);
       } else if (country.length < 11) {
         appendCountrisMurkup(country, countrisMurkupLess10);
-      } else if (country.length > 10) {
+      } else if (country.length >= 2 && country.length <= 10) {
         refs.countryListEl.innerHTML = '';
         Notiflix.Notify.success(
           'Too many matches found. Please enter a more specific name.'
